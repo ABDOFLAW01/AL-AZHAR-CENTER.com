@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ar">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="Al Azhar Center.jpg">
+    <title>ALAZHER CENTER سنتر الأزهر</title>
+    <link rel="stylesheet" href="tassneem.css" />
+    <style>
+      header {
+        flex-wrap: wrap;
+      }
+      header h1.logo {
+        font-size: 1.5rem;
+        flex: 1 1 100%;
+        text-align: center;
+        margin-top: 1rem;
+        word-wrap: break-word;
+      }
+      @media (max-width: 768px) {
+        header {
+          flex-direction: column;
+          align-items: center;
+        }
+        header h1.logo {
+          font-size: 1.2rem;
+          margin-top: 1rem;
+          padding: 0 10px;
+        }
+      } 
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav class="navigation">
+        <ul>
+          <li><a href="#" onclick="showSection('home')">الرئيسية</a></li>
+          <li><a href="#" onclick="showSection('productes')">منتجاتنا</a></li>
+          <li><a href="#" onclick="showSection('services')">الخدمات</a></li>
+          <li><a href="#" onclick="showSection('sections')">الأقسام</a></li>
+          <li><a href="#" onclick="showSection('contact')">للتواصل</a></li>
+        </ul>
+      </nav>
+      <img src="Al Azhar Center.jpg" alt="Logo" class="logo" style="width: 20%; height: auto;" />
+      <h1 class="logo">ALAZHER CENTER - سنتر الأزهر</h1>
+    </header>
+    <section class="section-toggle" id="home">
+      <h2>مرحبًا بكم في سنتر الأزهر</h2>
+      <p>مكانكم المفضل لتقديم أفضل المنتجات والخدمات لطلبة ومشايخ الأزهر والأوقاف وكل محبي الأزهر.</p>
+    </section>
+    <section class="section-toggle" id="productes">
+      <h2>منتجاتنا</h2>
+      <p>نقدم مجموعة متنوعة من المنتجات:</p>
+      <p>أدوات مكتبية، كتب وملخصات أزهرية، زي أزهري، كتب دينية، هدايا الحجاج، جلاليب، عمم، جبة، دعاية وإعلان وطباعة.</p>
+    </section>
+    <section class="section-toggle" id="services">
+      <h2>الخدمات</h2>
+      <p>نوفر الأدوات المكتبية، الكتب الأزهرية، الزي الأزهري، هدايا الحجاج، خدمات طباعة ودعاية وإعلان.</p>
+    </section>
+    <section class="section-toggle" id="sections">
+      <h2>الأقسام</h2>
+      <p>
+        <ul>
+          <li>قسم الكتب</li>
+          <li>قسم الأدوات المكتبية</li>
+          <li>قسم الزي الأزهري للأطفال</li>
+          <li>قسم هدايا الحجاج</li>
+          <li>قسم الجلاليب</li>
+          <li>قسم الدعاية والإعلان</li>
+          <li>قسم الطباعة</li>
+          <li>قسم الكتب الدينية</li>
+          <li>قسم كتب القراءات والتجويد</li>
+          <li>قسم العمم</li>
+          <li>قسم الجبة</li>
+          <li>قسم الشعراوي</li>
+          <li>قسم الملخصات الأزهرية</li>
+        </ul>
+      </p>
+    </section>
+    <section class="section-toggle" id="contact">
+      <h2>تواصل معنا</h2>
+      <p>
+        <nav class="navigations">
+          <ul>
+            <li>
+              فيسبوك: <a href="https://www.facebook.com/AlAzhar.Center.eg/" target="_blank">صفحتنا</a><br>
+              يوتيوب: <a href="https://www.youtube.com/@AlAzharCenter" target="_blank">قناتنا</a><br>
+              إنستجرام: <a href="https://www.instagram.com/alazhar.center.eg/" target="_blank">حسابنا</a><br>
+              واتساب: <a href="https://whatsapp.com/channel/0029VbB4oVKF6sn0UmLifx2Q" target="_blank">قناتنا</a><br>
+              تليجرام: <a href="https://t.me/+QI-pihk7Zbc3ZWVk" target="_blank">قناتنا</a><br>
+            </li>
+          </ul>
+        </nav>
+           رقم الهاتف: 01067920688 / 01004873824
+        </p>
+    </section>
+    <footer>
+      <p>&copy; Al AlAzhar Center- 2025سنتر الأزهر</p>
+      <p>Created By:Prog.Eng.Abdo Mohammed &copy;</p>
+    </footer>
+    <script>
+      function showSection(id) {
+        const sections = document.querySelectorAll('.section-toggle');
+        sections.forEach(s => s.style.display = 'none');
+        const target = document.getElementById(id);
+        if (target) target.style.display = 'block';
+      }
+
+      document.addEventListener('DOMContentLoaded', () => {
+        showSection('home');
+      });
+    </script>
+  </body>
+</html>
+FLAW IS ONE IN THE WORLD
